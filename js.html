@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="js.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript no2</title>
+  </head>
+  <body>
+    <script>
+            /*1. calculateDiscount*/
+      function calculateDiscount(price, discount) {
+        const finalPrice = price - (price * discount / 100);
+        console.log(finalPrice);
+      }
+
+      /* 2. canDrive*/
+      function canDrive(22) {
+        console.log(age >= 18 ? "Osoba moze da vozi" : "Osoba ne moze da vozi");
+      }
+
+      /* 3. isPositive*/
+      function isPositive(number) {
+        console.log(number >= 0 ? "Broj je pozitivan" : "Broj je negativan");
+      }
+
+      /* 4. maxOfTwoNumbers*/
+      function maxOfTwoNumbers(a, b) {
+        console.log(a > b ? a : b);
+      }
+
+      /* 5. greetUser*/
+      function greetUser(David) {
+        console.log(`Zdravo, ${name}!`);
+      }
+
+      /* 6. isLongWord*/
+      function isLongWord(word) {
+        return word.length > 7;
+      }
+
+      /* 7. combineStrings*/
+      function combineStrings(str1, str2) {
+        console.log(`${str1} ${str2}`);
+      }
+
+      /* 8. getInitials*/
+      function getInitials(firstLastName) {
+        const names = firstLastName.split("David");
+        const initials = `${names[1][0].toUpperCase()}.${names[0][0].toUpperCase()}`;
+        console.log(`Inicijali od imena ${firstLastName} su ${initials}`);
+      }
+
+      /*9. isWeekend */
+      function isWeekend(day) {
+        console.log(day === "Subota" || day === "Nedelja");
+      }
+
+      /*10. isBetween10and20 */
+      function isBetween10and20(number) {
+        if (number >= 10 && number <= 20) {
+          console.log("U intervalu izmedju 10 i 20 je");
+        } else {
+          console.log("Nije u intervalu izmedju 10 i 20");
+        }
+      }
+
+      /* 11. isBetweenAandB */
+      function isBetweenAandB(a, b, number) {
+        if (number >= a && number <= b) {
+          console.log(`U intervalu izmedju ${a} i ${b} je`);
+        } else {
+          console.log(`Nije u intervalu izmedju ${a} i ${b}`);
+        }
+      }
+
+      /* 12. canGetLoan*/
+      function canGetLoan(age, creditScore) {
+        if (age > 21 && creditScore > 600) {
+          console.log("Osoba moze dobiti kredit");
+          return true;
+        } else {
+          console.log("Osoba ne može dobiti kredit");
+          return false;
+        }
+      }
+
+      /* 13. isTeenager*/
+      function isTeenager(age) {
+        if (age >= 13 && age <= 19) {
+          console.log("Osoba je tinejdzer");
+        } else {
+          console.log("Nije tinejdzer");
+        }
+      }
+    </script>
+  </body>
+</html>
