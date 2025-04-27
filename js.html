@@ -6,36 +6,43 @@
     <title>JavaScript test</title>
   </head>
   <body>
-    <h1>hello</h1>
+    <h1>js test</h1>
     <script>
-
-
-            /*1. calculateDiscount*/
+      /*1. calculateDiscount*/
       function calculateDiscount(price, discount) {
-        const finalPrice = price - (price * discount / 100);
+        const finalPrice = price - (price * discount) / 100;
         console.log(finalPrice);
+        return finalprice;
+      }
+      const discountedPrice1 = calculateDiscount(100, 50);
+      const discountedPrice2 = calculateDiscount(1000, 3);
+
+      2; /*canDrive*/
+      function canDrive(age) {
+        console.log(age >= 18 ? "Osoba moze da vozi" : "Osoba ne moze da vozi");
+        return age >= 18;
       }
 
-      /* 2. canDrive*/
-      function canDrive(22) {
-        console.log(age >= 18 ? "Osoba moze da vozi" : "Osoba ne moze da vozi");
-      }
+      canDrive(16);
 
       /* 3. isPositive*/
       function isPositive(number) {
         console.log(number >= 0 ? "Broj je pozitivan" : "Broj je negativan");
       }
+      isPositive(20);
 
       /* 4. maxOfTwoNumbers*/
       function maxOfTwoNumbers(a, b) {
         console.log(a > b ? a : b);
       }
+      maxOfTwoNumbers(20, 50);
 
       /* 5. greetUser*/
-      function greetUser(David) {
+      function greetUser(name) {
         console.log(`Zdravo, ${name}!`);
       }
 
+      greetUser();
       /* 6. isLongWord*/
       function isLongWord(word) {
         return word.length > 7;
@@ -57,6 +64,7 @@
       function isWeekend(day) {
         console.log(day === "Subota" || day === "Nedelja");
       }
+      console.log(friday);
 
       /*10. isBetween10and20 */
       function isBetween10and20(number) {
@@ -94,6 +102,7 @@
         } else {
           console.log("Nije tinejdzer");
         }
+        return age;
       }
     </script>
   </body>
