@@ -37,6 +37,7 @@
       /* 4. maxOfTwoNumbers*/
       function maxOfTwoNumbers(a, b) {
         console.log(a > b ? a : b);
+        return a > b ? a : b;
       }
       const rezultat = maxOfTwoNumbers(20, 50);
       console.log(rezultat);
@@ -55,6 +56,9 @@
       function isLongWord(word) {
         return word.length > 7;
       }
+
+      const rezultat = isLongWord("programiranje");
+      console.log(rezultat);
 
       /* 7. combineStrings*/
       function combineStrings(str1, str2) {
