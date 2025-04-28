@@ -62,8 +62,12 @@
 
       /* 7. combineStrings*/
       function combineStrings(str1, str2) {
-        console.log(`${str1} ${str2}`);
+        const stringovi = `${str1} ${str2}`;
+
+        return stringovi;
       }
+      const stringovi = combineStrings("hello", "world");
+      console.log(stringovi);
 
       /* 8. getInitials*/
       function getInitials(firstLastName) {
@@ -74,9 +78,11 @@
 
       /*9. isWeekend */
       function isWeekend(day) {
-        console.log(day === "Subota" || day === "Nedelja");
+        return day === "Subota" || day === "Nedelja";
       }
-      console.log(friday);
+
+      const rezultat = isWeekend("Subota");
+      console.log(rezultat);
 
       /*10. isBetween10and20 */
       function isBetween10and20(number) {
@@ -114,8 +120,11 @@
         } else {
           console.log("Nije tinejdzer");
         }
-        return age;
+        return age >= 13 && age <= 19;
       }
+
+      const rezultat = isTeenager(12);
+      console.log(rezultat);
     </script>
   </body>
 </html>
