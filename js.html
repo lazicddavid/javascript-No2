@@ -29,21 +29,28 @@
       /* 3. isPositive*/
       function isPositive(number) {
         console.log(number >= 0 ? "Broj je pozitivan" : "Broj je negativan");
+        return number >= 0;
       }
-      isPositive(20);
+      const rezultat = isPositive(22);
+      console.log(rezultat);
 
       /* 4. maxOfTwoNumbers*/
       function maxOfTwoNumbers(a, b) {
         console.log(a > b ? a : b);
       }
-      maxOfTwoNumbers(20, 50);
+      const rezultat = maxOfTwoNumbers(20, 50);
+      console.log(rezultat);
 
       /* 5. greetUser*/
       function greetUser(name) {
-        console.log(`Zdravo, ${name}!`);
+        const pozdrav = `Zdravo, ${name}!`;
+        console.log(pozdrav);
+        return pozdrav;
       }
 
-      greetUser();
+      const pozdrav = greetUser("Ana");
+      console.log(zdravo);
+
       /* 6. isLongWord*/
       function isLongWord(word) {
         return word.length > 7;
